@@ -1,4 +1,6 @@
 import React from 'react'
+import Chart from '../../components/Chart/Chart'
+import Featured from '../../components/Featured/Featured'
 import Navbar from '../../components/Navbar/Navbar'
 import Sidebar from '../../components/Sidebar/Sidebar'
 import Widget from '../../components/Widget/Widget'
@@ -16,6 +18,10 @@ function Home() {
             <Widget type='order'/>
             <Widget type='earning'/>
             <Widget type='balance'/>                
+          </div>
+          <div className="charts">
+            <Featured/>
+            <Chart/>
           </div>
         </div>
     </div>
