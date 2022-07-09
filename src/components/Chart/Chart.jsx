@@ -59,8 +59,9 @@ export default function Chart() {
 
   return (
     <div className='chart'>
-      <ResponsiveContainer width='100%' height='100%'>
-        <LineChart
+      <div className="title">Daily Revenue</div>
+      <ResponsiveContainer width='99%' height={350}>
+        <LineChart        
           width={500}
           height={300}
           data={data}
@@ -71,7 +72,7 @@ export default function Chart() {
             bottom: 5,
           }}
         >
-          <CartesianGrid strokeDasharray='3 3' />
+          <CartesianGrid strokeDasharray='3 3' className="chartGrid"/>
           <XAxis dataKey='name' />
           <YAxis />
           <Tooltip />
