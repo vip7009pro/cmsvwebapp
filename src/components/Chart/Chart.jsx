@@ -8,7 +8,7 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
-  ResponsiveContainer,
+/*   ResponsiveContainer, */
 } from "recharts";
 
 export default function Chart() {
@@ -60,10 +60,11 @@ export default function Chart() {
   return (
     <div className='chart'>
       <div className="title">Daily Revenue</div>
-      <ResponsiveContainer width='99%' height={350}>
+      {/* <ResponsiveContainer width='50%' height={350}> */}
+      
         <LineChart        
-          width={500}
-          height={300}
+          width={900}
+          height= {300}
           data={data}
           margin={{
             top: 5,
@@ -72,8 +73,8 @@ export default function Chart() {
             bottom: 5,
           }}
         >
-          <CartesianGrid strokeDasharray='3 3' className="chartGrid"/>
-          <XAxis dataKey='name' />
+        <CartesianGrid strokeDasharray='3 3' className="chartGrid"/>
+          <XAxis dataKey='name'/>
           <YAxis />
           <Tooltip />
           <Legend />
@@ -85,7 +86,7 @@ export default function Chart() {
           />
           <Line type='monotone' dataKey='uv' stroke='#82ca9d' />
         </LineChart>
-      </ResponsiveContainer>
+      {/* </ResponsiveContainer> */}
     </div>
   );
 }

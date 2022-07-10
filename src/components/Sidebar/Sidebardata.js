@@ -2,6 +2,8 @@ import React from 'react'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import HomeIcon from '@mui/icons-material/Home';
+/* import String from "../../components/String/String"; */
+
 export const SidebarData = [
     {
       title: 'Home',
@@ -12,8 +14,8 @@ export const SidebarData = [
   
       subNav: [
         {
-          title: 'Users',
-          path: '/overview/users',
+          title: 'Dashboard',
+          path: '/',
           icon: <HomeIcon />
         },
         {
@@ -25,7 +27,7 @@ export const SidebarData = [
     },
     {
       title: 'Reports',
-      path: '/reports',
+      path: '/',
       icon: <HomeIcon />,
       iconClosed: <KeyboardArrowDownIcon />,
       iconOpened: <KeyboardArrowUpIcon />,

@@ -7,6 +7,7 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 import Widget from "../../components/Widget/Widget";
 import "../home/home.scss";
 
+
 function Home() {
   const columns = [
     { field: "id", headerName: "ID", width: 70 },
